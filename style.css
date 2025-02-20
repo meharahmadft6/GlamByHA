@@ -1139,7 +1139,7 @@ video {
   width: 50px; /* Adjust icon size */
 }
 
-@media (min-width: 380px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 700px) {
   .sm\:hidden {
     display: none;
   }
