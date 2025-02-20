@@ -31,7 +31,8 @@
           <div class="flex items-center gap-2">
             <img class="img-logo" src="./img/darklogo-re.png" alt="Logo Dark" />
             <span class="text-2xl font-bold text-indigo-900 dark:text-white">
-              GlamByHA
+              <a href="index.html"> GlamByHA </a>
+   
             </span>
           </div>
           <ul
@@ -49,9 +50,11 @@
             <li class="hover:text-gray-500">
               <a href="#works">Works</a>
             </li>
-            <li class="hover:text-gray-500">
-              <a href="#contact">contact</a>
-            </li>
+   <li class="hover:text-gray-500">
+              <a
+                href="https://api.whatsapp.com/send?phone=19295950931&text=Hi!%20I%20want%20to%20book%20an%20appointment"
+                >Contact</a
+              >
           </ul>
 
           <div class="flex items-center gap-4">
@@ -181,9 +184,19 @@
         </div>
       </div>
     </div>
-
-    <section id="services" class="dark:bg-slate-900 py-10 p-4 flex flex-col">
-      <h1 class="text-indigo-600 font-bold text-4xl dark:text-prim text-center">
+   
+    <div class="sm:hidden" id="includeYup">      
+      <script>
+        fetch('yup.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('includeYup').innerHTML = data)
+        .catch(error => console.error('Error loading the file:', error));
+      </script>
+    </div>
+      
+    
+    <section id="services" class="dark:bg-slate-900 py-10 p-4 flex flex-col ">
+      <h1 class="text-indigo-600 font-bold text-4xl dark:text-prim text-center lg:hidden">
         Services
       </h1>
       <h2 class="text-2xl dark:text-white mt-2 lg:hidden">
@@ -192,7 +205,7 @@
       </h2>
 
       <!-- Mobile: Swiper Slider -->
-      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg">
+      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -243,7 +256,7 @@
             </div>
 
             <!-- Service 2 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" >
               <img
                 class="w-full h-56 object-cover rounded-t-lg"
                 src="./img/s-3.png"
@@ -280,7 +293,7 @@
           >Full-Body Waxing for a Smooth, Flawless Finish</span
         >
       </h2>
-      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg">
+      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -382,7 +395,7 @@
           >Gentle & Precise Face Waxing for a Radiant Glow</span
         >
       </h2>
-      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg">
+      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
