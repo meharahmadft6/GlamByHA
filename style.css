@@ -517,6 +517,24 @@ video {
   --tw-backdrop-saturate: ;
   --tw-backdrop-sepia: ;
 }
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Ensure all elements fit within the screen */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix the dark mode extra space */
+main {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 .container {
   width: 100%;
@@ -524,19 +542,19 @@ video {
 
 @media (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+    max-width: 100%;
   }
 }
 
@@ -629,7 +647,7 @@ video {
 }
 
 .mt-5 {
-  margin-top: 1.25rem;
+  margin-top: 2rem;
 }
 .mt-2 {
   margin-left: 1rem;
@@ -1125,7 +1143,7 @@ video {
   bottom: 20px;
   right: 20px;
   background-color: #25d366;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -1139,9 +1157,16 @@ video {
   width: 50px; /* Adjust icon size */
 }
 
-@media (min-width: 300px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .sm\:hidden {
     display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .sm\:text {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    line-height: 1.75rem;
   }
 }
 @media (min-width: 480px) {
@@ -1231,6 +1256,9 @@ video {
   }
   .lg\:hidden {
     display: none;
+  }
+  .lg\:mb1 {
+    margin-bottom: 1.5rem;
   }
   .lg\:flex-row {
     flex-direction: row;
@@ -1415,6 +1443,6 @@ video {
   color: rgb(212 175 55 / var(--tw-text-opacity)); /* D4AF37 - Gold */
 }
 .dark .dark\:img-logo {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
 }
